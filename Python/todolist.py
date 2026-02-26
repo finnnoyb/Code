@@ -49,7 +49,7 @@ def to_do_list():
                 print(f"Task: '{deleted_tasks}' is deleted successfully.")
                 print()
 
-        #Exit the program
+        #Close the program
         if ask_user == "4":
             print("You're exit now.")
             break
