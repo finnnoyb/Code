@@ -1,0 +1,11 @@
+1. Was versteht man unter einer Datenbank?
+2. Wozu werden ER-Modelle verwendet?
+Benennen Sie die folgenden Elemente:
+- Entity
+- Relation
+- Attribute
+//
+Entität (Entity): individuell identifizierbares Objekt der Wirklichkeit; z. B. der Angestellte Müller, das Projekt 3232
+Beziehung (Relationship): Verknüpfung / Zusammenhang zwischen zwei oder mehreren Entitäten; z. B. Angestellter Müller leitet Projekt 3232.
+Eigenschaft (englisch attribute): Was über eine Entität (im Kontext) von Interesse ist; z. B. das Eintrittsdatum des Angestellten Müller.
+//
