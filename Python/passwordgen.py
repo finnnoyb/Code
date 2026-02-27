@@ -1,19 +1,20 @@
 import random
 import string
 
+# Define character sets
+lowercase = string.ascii_lowercase
+uppercase = string.ascii_uppercase
+digits = string.digits
+punctuation = string.punctuation
 
-string.ascii_lowercase
-string.ascii_uppercase
-string.digits
-string.punctuation
 
+length = int(input("How long should the password be? "))
+password = ""
 
-length=int(input("how long should pw be? "))
-random.choice(seq)
-
+# Generate password by picking random characters from all sets
 for i in range(length):
-    # picks a character and add it to the resulting pw
+    # Choose a random character from all available sets
+    all_chars = lowercase + uppercase + digits + punctuation
+    password += random.choice(all_chars)
 
-    lol =ascii(366)
-    print(lol)
-Ö
+print("Generated password:", password)
