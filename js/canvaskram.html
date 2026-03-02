@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas Example</title>
+</head>
+<body>
+    <canvas id="myCanvas" width="300" height="150"></canvas>
+
+    <script>
+        // Zugriff auf das canvas-Element und dessen 2D-Grafikkontext
+        var canvas = document.getElementById("myCanvas");
+        var ctx = canvas.getContext("2d");
+
+        // Startpunkt der Linie definieren (x, y)
+        ctx.beginPath();
+        ctx.moveTo(50, 50);
+
+        // Endpunkt der Linie definieren (x, y)
+        ctx.lineTo(250, 100);
+
+        // Farbe der Linie festlegen
+        ctx.strokeStyle = "red";
+
+        // Dicke der Linie festlegen
+        ctx.lineWidth = 5;
+
+        // Linie zeichnen und anwenden
+        ctx.stroke();
+    </script>
+</body>
+</html>
