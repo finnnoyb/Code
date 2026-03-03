@@ -13,64 +13,62 @@
 <body>
   <canvas id="myCanvas" width="800" height="600"></canvas>
   <script>
-  script>
-      const canvas = document.getElementById('c');
-      const ctx = canvas.getContext('2d');
-      const status = document.getElementById('status');
-
-      const W = canvas.width, H = canvas.height;
-      const GROUND = H - 60;
-      const A = { x: 80, y: GROUND };
-      const B = { x: W - 80, y: GROUND };
-
-      let ball = { x: A.x, y: A.y, vx: 0, vy: 0, r: 14 };
-      let running = false;
-      let arrived = false;
-      let trail = [];
-      let raf;
-
-      function drawScene() {
-        // Background
-        ctx.clearRect(0, 0, W, H);
-
-        // Ground line
-        ctx.strokeStyle = '#1e1e2e';
-        ctx.lineWidth = 1;
+    const canvas = document.getElementById('myCanvas'); // ❌ war 'c' → ✅ jetzt 'myCanvas'
+    const ctx = canvas.getContext('2d');
+    const status = document.getElementById('status'); // ⚠️ Achtung: 'status'-Element existiert nicht!
+  
+    const W = canvas.width, H = canvas.height;
+    const GROUND = H - 60;
+    const A = { x: 80, y: GROUND };
+    const B = { x: W - 80, y: GROUND };
+  
+    let ball = { x: A.x, y: A.y, vx: 0, vy: 0, r: 14 };
+    let running = false;
+    let arrived = false;
+    let trail = [];
+    let raf;
+  
+    function drawScene() {
+      // Background
+      ctx.clearRect(0, 0, W, H);
+  
+      // Ground line
+      ctx.strokeStyle = '#1e1e2e';
+      ctx.lineWidth = 1;
+      ctx.beginPath();
+      ctx.moveTo(40, GROUND + ball.r);
+      ctx.lineTo(W - 40, GROUND + ball.r);
+      ctx.stroke();
+  
+      // Markers A and B
+      drawMarker(A.x, GROUND, 'A', '#4ade80');
+      drawMarker(B.x, GROUND, 'B', '#f0c040');
+  
+      // Trail
+      for (let i = 0; i < trail.length; i++) {
+        const t = trail[i];
+        const alpha = i / trail.length * 0.4;
         ctx.beginPath();
-        ctx.moveTo(40, GROUND + ball.r);
-        ctx.lineTo(W - 40, GROUND + ball.r);
-        ctx.stroke();
-
-        // Markers A and B
-        drawMarker(A.x, GROUND, 'A', '#4ade80');
-        drawMarker(B.x, GROUND, 'B', '#f0c040');
-
-        // Trail
-        for (let i = 0; i < trail.length; i++) {
-          const t = trail[i];
-          const alpha = i / trail.length * 0.4;
-          ctx.beginPath();
-          ctx.arc(t.x, t.y, ball.r * (i / trail.length), 0, Math.PI * 2);
-          ctx.fillStyle = `rgba(240,192,64,${alpha})`;
-          ctx.fill();
-        }
-
-        // Ball
-        const grad = ctx.createRadialGradient(ball.x - 4, ball.y - 4, 2, ball.x, ball.y, ball.r);
-        grad.addColorStop(0, '#fff8dc');
-        grad.addColorStop(0.4, '#f0c040');
-        grad.addColorStop(1, '#c07800');
-        ctx.beginPath();
-        ctx.arc(ball.x, ball.y, ball.r, 0, Math.PI * 2);
-        ctx.fillStyle = grad;
-        ctx.fill();
-
-        // Shadow
-        ctx.beginPath();
-        ctx.ellipse(ball.x, GROUND + ball.r + 2, ball.r * 0.8, 4, 0, 0, Math.PI * 2);
-        ctx.fillStyle = 'rgba(0,0,0,0.3)';
+        ctx.arc(t.x, t.y, ball.r * (i / trail.length), 0, Math.PI * 2);
+        ctx.fillStyle = `rgba(240,192,64,${alpha})`;
         ctx.fill();
       }
-    </script>
-  </body>
+  
+      // Ball
+      const grad = ctx.createRadialGradient(ball.x - 4, ball.y - 4, 2, ball.x, ball.y, ball.r);
+      grad.addColorStop(0, '#fff8dc');
+      grad.addColorStop(0.4, '#f0c040');
+      grad.addColorStop(1, '#c07800');
+      ctx.beginPath();
+      ctx.arc(ball.x, ball.y, ball.r, 0, Math.PI * 2);
+      ctx.fillStyle = grad;
+      ctx.fill();
+  
+      // Shadow
+      ctx.beginPath();
+      ctx.ellipse(ball.x, GROUND + ball.r + 2, ball.r * 0.8, 4, 0, 0, Math.PI * 2);
+      ctx.fillStyle = 'rgba(0,0,0,0.3)';
+      ctx.fill();
+    }
+  </script>
 </html>
