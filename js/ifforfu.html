@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -21,7 +20,7 @@
         const multiplikation = zahl1 * zahl2;
         const division = zahl1 / zahl2;
 
-        // Ergebnisse ausgeben
+        // Ergebnisse ausgeben (Aufgaben 1 & 2)
         console.log("Name: " + name);
         console.log("Alter: " + alter);
         console.log("Lieblingsfarbe: " + lieblingsfarbe);
@@ -32,6 +31,30 @@
         console.log("Subtraktion: " + subtraktion);
         console.log("Multiplikation: " + multiplikation);
         console.log("Division: " + division);
+
+        // --- Aufgabe 3: Altersprüfung ---
+        console.log("--- Aufgabe 3 ---");
+        // Die vorhandene Variable 'alter' (Wert 20) wird verwendet
+        if (alter >= 18) {
+            console.log("Volljährig");
+        } else {
+            console.log("Minderjährig");
+        }
+
+        // --- Aufgabe 4: Schleifen ---
+        console.log("--- Aufgabe 4 ---");
+
+        // 1. Schleife: Zahlen 1 bis 10
+        console.log("Zahlen 1 bis 10:");
+        for (let i = 1; i <= 10; i++) {
+            console.log(i);
+        }
+
+        // 2. Schleife: Gerade Zahlen von 2 bis 20
+        console.log("Gerade Zahlen von 2 bis 20:");
+        for (let i = 2; i <= 20; i += 2) {
+            console.log(i);
+        }
     </script>
 </body>
 </html> 
