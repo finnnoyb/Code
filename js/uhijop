@@ -1,0 +1,46 @@
+
+Das <canvas> Element in HTML dient als Zeichenfläche, auf der mit JavaScript Grafiken, Diagramme, Spiele oder andere visuelle Inhalte dynamisch erzeugt werden können. Es stellt selbst keine Zeichenfunktionen bereit, sondern wird über JavaScript gesteuert.
+Um darauf zuzugreifen, wählt man das Element üblicherweise mit document.getElementById("canvasId") aus und ruft dann die Methode getContext("2d") auf, um ein 2D-Zeichenobjekt zu erhalten damit  können dann Formen, Texte und Bilder gezeichnet werden.
+
+
+Ein Event ist ein Signal, das vom Browser ausgelöst wird, wenn eine bestimmte Aktion stattfindet – beispielsweise ein Mausklick oder Tastendruck. Ein Event-Handler ist eine Funktion, die als Reaktion auf ein solches Event ausgeführt wird; sie enthält den Code, der festlegt, was beim Eintreten des Ereignisses passieren soll. Kurz gesagt: Das Event benachrichtigt, dass etwas geschehen ist, der Event-Handler definiert die darauf folgende Aktion.
+
+
+
+
+
+a) Begriffserklärungen
+Variable: Ein benannter Speicherplatz, der einen Wert (z.B. Zahl, Text) aufnehmen und später im Programm verwendet oder verändert werden kann.
+
+Datentyp: Gibt an, welche Art von Daten eine Variable speichern kann (z.B. Zahl, Zeichenkette, Wahrheitswert). In JavaScript gibt es primitive Typen wie number, string, boolean sowie komplexe Typen wie object.
+
+Funktion: Ein eigenständiger Code-Block, der eine bestimmte Aufgabe ausführt. Funktionen können Parameter entgegennehmen und einen Wert zurückgeben. Sie werden definiert und dann aufgerufen.
+
+Array: Eine Datenstruktur zur Speicherung einer geordneten Liste von Werten. Die Elemente sind über einen Index (beginnend bei 0) erreichbar. In JavaScript werden Arrays mit eckigen Klammern [] erstellt.
+
+Objekt: Eine Sammlung von Schlüssel-Wert-Paaren (Properties). Jeder Schlüssel ist ein String (oder Symbol) und verweist auf einen beliebigen Wert. Objekte werden mit geschweiften Klammern {} erstellt.
+
+b) Beispiele
+Gültige Variablendeklaration mit let:
+let alter = 25;
+
+Konstante mit const:
+const geburtsjahr = 1998;
+
+Ausgabe in der Konsole:
+console.log("Hallo Welt!");
+
+c) Unterschiede in JavaScript
+== vs. ===:
+== vergleicht zwei Werte nach einer Typumwandlung (Typkonvertierung), d.h. es prüft auf inhaltliche Gleichheit, auch wenn die Datentypen unterschiedlich sind.
+=== vergleicht ohne Typumwandlung (strikte Gleichheit). Es ist nur true, wenn sowohl Wert als auch Typ identisch sind.
+Beispiel: 5 == "5" → true, aber 5 === "5" → false.
+
+let vs. var (mindestens ein Punkt):
+Der Hauptunterschied ist der Gültigkeitsbereich (Scope):
+
+let ist block-skopiert, d.h. es existiert nur innerhalb des umschließenden Blocks { ... }.
+
+var ist funktions-skopiert, d.h. es ist innerhalb der gesamten Funktion sichtbar, in der es deklariert wurde (oder global, falls außerhalb einer Funktion).
+Ein weiterer Unterschied ist, dass var eine Hochziehung (Hoisting) mit undefined durchführt, während let zwar auch gehoben wird, aber nicht initialisiert ist (Temporäre Totzone).
+

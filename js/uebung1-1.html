@@ -1,0 +1,57 @@
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Canvas Aufgabe</title>
+    <style>
+        canvas {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="asdfad" width="400" height="300"></canvas>
+    <script>
+        const canvas = document.getElementById('asdfad');
+        const ctx = canvas.getContext('2d');
+
+        // Startposition
+        let x = 50;
+        let y = 50;
+        const radius = 20;
+        const step = 5;   // hier war der Tippfehler (cost statt const)
+
+        // Ball zeichnen
+        function drawBall() {   // "fuction" → "function"
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            ctx.fillStyle = 'blue';
+            ctx.beginPath();
+            ctx.arc(x, y, radius, 0, 2 * Math.PI);
+            ctx.fill();
+        }
+
+        // Event-Listener für Tastendruck
+        window.addEventListener('keydown', function(event) {
+            // Nur Pfeiltasten behandeln
+            if (event.key === 'ArrowLeft') {
+                x -= step;
+                event.preventDefault(); // Verhindert Scrollen
+            } else if (event.key === 'ArrowRight') {
+                x += step;
+                event.preventDefault();
+            } else {
+                return; // andere Tasten ignorieren
+            }
+            // Nach Änderung neu zeichnen
+            drawBall();
+        });
+        canvas.addEventListener('click', function(event) {
+            x = event.offsetX;
+            y = event.offsetY;
+            drawBall();
+        }); 
+
+        // Ersten Kreis zeichnen
+        drawBall();
+    </script>
+</body>
+</html>

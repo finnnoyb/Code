@@ -1,0 +1,50 @@
+<html>
+<head>
+    <title>Beweglicher blauer Kreis</title>
+</head>
+<body>
+    <canvas id="asdfad" width="100" height="100" style="border:1px solid #000;"></canvas>
+
+    <script>
+        const canvas = document.getElementById('asdfad');
+        const ctx = canvas.getContext('2d');
+
+        // Startposition
+        let x = 50;
+        let y = 50;
+        const radius = 20;
+        const schritt = 5;
+
+        // Funktion zum Zeichnen des Kreises an aktueller Position
+        function zeichneKreis() {
+            // Canvas löschen
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            // Kreis zeichnen
+            ctx.fillStyle = 'blue';
+            ctx.beginPath();
+            ctx.arc(x, y, radius, 0, 2 * Math.PI);
+            ctx.fill();
+        }
+
+        // Event-Listener für Tastendruck
+        window.addEventListener('keydown', function(event) {
+            // Nur Pfeiltasten behandeln
+            if (event.key === 'ArrowLeft') {
+                x -= schritt;
+                event.preventDefault(); // Verhindert Scrollen
+            } else if (event.key === 'ArrowRight') {
+                x += schritt;
+                event.preventDefault();
+            } else {
+                return; // andere Tasten ignorieren
+            }
+            // Nach Änderung neu zeichnen
+            zeichneKreis();
+        });
+
+        // Ersten Kreis zeichnen
+        zeichneKreis();
+    </script>
+
+</body>
+</html>
