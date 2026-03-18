@@ -13,3 +13,63 @@ dann verteilen in andere räume
 LNB : https://www.conrad.de/de/p/uas-684-universal-quattro-speisesystem-2793724.html?experience=b2c&insert=ID#productTechData
 Sat Schü
 usw usw
+
+
+
+
+start > kind 1 -3,69dB
+start > schlafen -7,38dB
+
+
+
+//
+1× Multischalter  
+→ Jultec JRM0508T oder Kathrein EXR 158
+
+1× Erdungsblock  
+→ Kathrein EMU 24
+
+6–8× SAT‑Dosen  
+→ Kathrein ESD 84
+
+6–8× Unterputzdosen  
+→ tiefe UP‑Dosen (≥ 60mm)
+
+ca. 100–150m Koaxkabel  
+→ Kathrein LCD 111
+
+20–30× F‑Stecker  
+→ Cabelcon Self‑Install
+
+1× Potentialausgleichsleitung  
+→ 4mm² Cu
+
+
+
+
+
+1,20 x 150m
+
+/////////////////
+
+156,96€    Kathrein CAS 80 graphit 
+
+119,49€    Kathrein UAS 684 Quattro-LNB 
+
+118,88€    Jultec JRM0508T Multischalter 5/8 JRM0508T
+
+180€    Kathrein 215500019 Koaxialkabel Außen-Durchmesser: 6.8 mm 75 Ω Weiß Meterware kaufen
+
+101,98€ 1× Multischalter →  Kathrein EXR 158 https://www.voelkner.de/index.php?mp=products&file=info&ref=19&products_id=760624&offer=1e634452b33b07c21b1333a849c240bd&products_model=C96201&context=ve
+
+3,78€ 1× Erdungsblock → Kathrein EMU 24 https://www.tandmore.de/Zubehoer-und-Accessoires/Kabel-Stecker-Adapter/Antenne-Stecker-Kupplung-und-Verbinder/Kathrein-EMU24-F-Erdungsblock-4fach::22952.html
+
+9,12€ 6× SAT Dosen → Kathrein ESD 84 https://www.tandmore.de/Haus-Garten/Unterhaltungselektronik/Sat-und-Antennentechnik/Kathrein-274425-ESD-84-Stichdose-Sat-BK-2f-3-8dB-860-4-3dB-2150::2566.html
+
+0,21€ 6× Unterputzdosen → tiefe UP Dosen (≥ 60mm) https://www.obi.de/p/7523780/iso-schalterdose-60-mm-x-62-mm-1-stueck
+
+195,49€ 150m Koaxkabel → Kathrein LCD 111 https://www.kabelscheune.de/Koaxialkabel-Koaxkabel/Kathrein-LCD-111-A-Koaxialkabel-130-dB-weiss.html
+
+0,99€ 30× F Stecker → Cabelcon Self Install https://www.satshop-heilbronn.de/Cabelcon-F-6-TD-SELF-INSTALL-4.9-NI-True-Drop-F-Kompressionsstecker-fuer-RG6-Koaxkabel-(F-Stecker)
+
+0,86€ 15× Potentialausgleichsleitung → 4mm² Cu https://www.elektromaterial.eu/kabel-leitungen/verdrahtungsleitung/flexibel/4-mm2/2012/meterware-verdrahtungsleitung-h07v-k-4-mm2-grau?c=1436
