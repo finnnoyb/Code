@@ -51,6 +51,18 @@
             }
           },
           {
+            "id": "01109e5abd0f58f1",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.12.4"
+              },
+              "icon": "lucide-book-up",
+              "title": "Release Notes 1.12.4"
+            }
+          },
+          {
             "id": "fa06b3b362bd00d1",
             "type": "leaf",
             "state": {
@@ -70,7 +82,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -172,13 +184,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "MA/Extremwerte.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Extremwerte"
+              "title": "Outline"
             }
           }
         ],
@@ -199,7 +210,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "0a9b150e7c03d709",
+  "active": "01109e5abd0f58f1",
   "lastOpenFiles": [
     "IMG_3727.jpg",
     "LF 09/SAT.md",
