@@ -25,12 +25,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Prüfungen/LF-1.md",
+                "file": "Prüfungen/LF-9 klausur.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "LF-1"
+              "title": "LF-9 klausur"
             }
           }
         ],
@@ -136,13 +136,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Prüfungen/LF-1.md",
+                "file": "Prüfungen/LF-9 klausur.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of LF-1"
+              "title": "Outline of LF-9 klausur"
             }
           },
           {
@@ -184,8 +184,9 @@
   },
   "active": "f021e99dc1cf4b89",
   "lastOpenFiles": [
-    "Prüfungen/LF-7.md",
     "Prüfungen/LF-1.md",
+    "Prüfungen/LF-9 klausur.md",
+    "Prüfungen/LF-7.md",
     "AI Local/Qwen cloud.md",
     "SADFSD.md",
     "LF 09/SAT wip.md",
@@ -223,7 +224,6 @@
     "Praktikum Sikom/Untitled.md",
     "LF-05 Java mut/Daten typen.md",
     "LF-05 Java mut/KP.md",
-    "datenbanken/Abott.md",
     "Praktikum Sikom/Untitled 1.base",
     "Praktikum Sikom",
     "LF-03",
