@@ -4,7 +4,7 @@ import java.awt.event.*;
 import java.util.ArrayList;
 import java.util.Random;
 
-public class DodgingGame extends JPanel implements ActionListener, KeyListener {
+public class kite extends JPanel implements ActionListener, KeyListener {
     // Spieler-Eigenschaften
     private int playerX = 220;
     private final int playerY = 440;
@@ -27,7 +27,7 @@ public class DodgingGame extends JPanel implements ActionListener, KeyListener {
     private static final int FALL_SPEED = 5;
     private static final int PLAYER_SPEED = 6;
 
-    public DodgingGame() {
+    public kite() {
         setPreferredSize(new Dimension(WINDOW_WIDTH, WINDOW_HEIGHT));
         setBackground(Color.WHITE);
         setFocusable(true);
@@ -140,8 +140,8 @@ public class DodgingGame extends JPanel implements ActionListener, KeyListener {
 
     public static void main(String[] args) {
         // Erstellung des Hauptfensters
-        JFrame frame = new JFrame("Ausweichspiel");
-        DodgingGame gamePanel = new DodgingGame();
+        JFrame frame = new JFrame("kite");
+        kite gamePanel = new kite();
         
         frame.add(gamePanel);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
