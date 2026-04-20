@@ -154,6 +154,7 @@ public class kite extends JPanel implements ActionListener, KeyListener {
 
 // add pewpew
 // add kiting
+// add displacement
 // add increasing difficulty
 // add fixed difficulty by choice
 // add menu
