@@ -23,7 +23,7 @@ public class kite extends JPanel implements ActionListener, KeyListener {
     // Fenster- und Objektgrößen
     private static final int WINDOW_WIDTH = 500;
     private static final int WINDOW_HEIGHT = 500;
-    private static final int OBJECT_SIZE = 30;
+    private static final int OBJECT_SIZE = 30; //
     private static final int FALL_SPEED = 5;
     private static final int PLAYER_SPEED = 6;
 
@@ -33,7 +33,7 @@ public class kite extends JPanel implements ActionListener, KeyListener {
         setFocusable(true);
         addKeyListener(this);
         
-        // Spiel-Schleife mit ca. 60 FPS
+        // bei 16 sinds so ca. 60 FPS
         gameTimer = new Timer(16, this);
         gameTimer.start();
     }
@@ -110,7 +110,6 @@ public class kite extends JPanel implements ActionListener, KeyListener {
     @Override
     public void keyPressed(KeyEvent e) {
         int key = e.getKeyCode();
-        // Steuerung: A = links, D = rechts
         if (key == KeyEvent.VK_D) rightPressed = true;
         if (key == KeyEvent.VK_A) leftPressed = true;
         if (key == KeyEvent.VK_SPACE && gameOver) {
@@ -128,7 +127,6 @@ public class kite extends JPanel implements ActionListener, KeyListener {
 
     @Override
     public void keyTyped(KeyEvent e) {
-        // Nicht benötigt
     }
 
     private void resetGame() {
