@@ -39,12 +39,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notizen.md",
+                "file": "Prüfungen/LF-9 klausur.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Notizen"
+              "title": "LF-9 klausur"
             }
           }
         ],
@@ -150,13 +150,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notizen.md",
+                "file": "Prüfungen/LF-9 klausur.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Notizen"
+              "title": "Outline of LF-9 klausur"
             }
           },
           {
@@ -198,8 +198,8 @@
   },
   "active": "6a18a7e6293e6c37",
   "lastOpenFiles": [
-    "Prüfungen/LF-9 klausur.md",
     "Notizen.md",
+    "Prüfungen/LF-9 klausur.md",
     "Prüfungen/LF-1.md",
     "Prüfungen/LF-7.md",
     "AI Local/Qwen cloud.md",
