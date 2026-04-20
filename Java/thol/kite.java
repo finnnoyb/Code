@@ -160,4 +160,4 @@ public class kite extends JPanel implements ActionListener, KeyListener {
 // add environment
 // add zones
 // add item
-// add market/shop
+// add market or shop
