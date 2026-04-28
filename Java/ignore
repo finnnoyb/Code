@@ -1,0 +1,47 @@
+package eh;
+
+public class Auto {
+
+        private String marke;
+        private String modell;
+        private int baujahr;
+        private double preis;
+
+        // 1. Standardkonstruktor
+        public Auto() {
+            this("Unbekannt", "Unbekannt", 0, 0.0);
+        }
+
+        // 2. Konstruktor mit allen Parametern
+        public Auto(String marke, String modell, int baujahr, double preis) {
+            this.marke = marke;
+            this.modell = modell;
+            this.baujahr = baujahr;
+            this.preis = preis;
+        }
+
+        // 3. Konstruktor nur mit Marke und Modell
+        public Auto(String marke, String modell) {
+            this(marke, modell, 0, 0.0);
+        }
+
+        // 5. Methode zum Anzeigen
+        public void anzeigen() {
+            System.out.println("Marke: " + marke);
+            System.out.println("Modell: " + modell);
+            System.out.println("Baujahr: " + baujahr);
+            System.out.println("Preis: " + preis);
+            System.out.println("-------------------");
+        }
+
+        // 6. Test in main
+        public static void main(String[] args) {
+            Auto a1 = new Auto();
+            Auto a2 = new Auto("BMW", "X5", 2022, 55000);
+            Auto a3 = new Auto("Audi", "A3");
+
+            a1.anzeigen();
+            a2.anzeigen();
+            a3.anzeigen();
+        }
+    }
