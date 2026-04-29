@@ -23,6 +23,15 @@ perioden dauer, effektiv wert
 
 ozslkop
 
+zeiger diagramm
+Spannungs dreieck 
+
+widerstand spule xl 
+frequenz abhägiger widerstand xc !!!!!!! 
+
+schwingkreise 
+filter schaltung !!!!!!!!!!!
+
 Spullen kodensator (nicht ladekurven efunktion gleichstrom kreis raus)
 wechsel strom kreis wird kommen tho
 
